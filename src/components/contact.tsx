@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin, ArrowUpRight } from 'lucide-react'
+import { Mail, GithubIcon, LinkedinIcon, ArrowUpRight } from 'lucide-react'
 
 export function Contact() {
   return (
@@ -7,9 +7,9 @@ export function Contact() {
         Also: milk enjoyer, former game modder, runs a Telegram bot 24/7 on a VPS.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8">
-        <p className="font-mono text-xs uppercase tracking-widest text-muted pt-1">
+        <h2 className="font-mono text-xs uppercase tracking-widest text-muted pt-1">
           Get in touch
-        </p>
+        </h2>
         <div>
           <div className="flex flex-col sm:flex-row gap-6 mb-8">
             <a
@@ -25,7 +25,7 @@ export function Contact() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-muted transition-colors duration-100 hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
             >
-              <Github size={14} />
+              <GithubIcon size={14} />
               GitHub
               <ArrowUpRight size={10} />
             </a>
@@ -35,7 +35,7 @@ export function Contact() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-muted transition-colors duration-100 hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
             >
-              <Linkedin size={14} />
+              <LinkedinIcon size={14} />
               LinkedIn
               <ArrowUpRight size={10} />
             </a>

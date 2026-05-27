@@ -2,9 +2,9 @@ export function Capabilities() {
   return (
     <section className="reveal py-20 border-b border-rule" style={{ '--i': 1 } as React.CSSProperties}>
       <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8">
-        <p className="font-mono text-xs uppercase tracking-widest text-muted pt-1">
+        <h2 className="font-mono text-xs uppercase tracking-widest text-muted pt-1">
           What I do
-        </p>
+        </h2>
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-2 text-sm text-muted">
             <span>Vue.js, React, Next.js, TypeScript</span>

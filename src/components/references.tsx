@@ -1,9 +1,9 @@
 export function References() {
   return (
     <section className="reveal py-20 border-b border-rule" style={{ '--i': 4 } as React.CSSProperties}>
-      <p className="font-mono text-xs uppercase tracking-widest text-muted mb-12">
+      <h2 className="font-mono text-xs uppercase tracking-widest text-muted mb-12">
         References
-      </p>
+      </h2>
 
       <div className="space-y-12">
         <blockquote>

@@ -2,9 +2,9 @@ export function Career() {
   return (
     <section className="reveal py-20 border-b border-rule" style={{ '--i': 3 } as React.CSSProperties}>
       <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8">
-        <p className="font-mono text-xs uppercase tracking-widest text-muted pt-1">
+        <h2 className="font-mono text-xs uppercase tracking-widest text-muted pt-1">
           Career
-        </p>
+        </h2>
         <div className="space-y-4">
           <TimelineEntry year="2025" role="Software Developer" org="PTPN IV — enterprise tools, 71 factories" />
           <TimelineEntry year="2024" role="Software Engineer" org="Diskominfo — government digital services" />
