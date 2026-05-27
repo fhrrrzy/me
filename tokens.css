@@ -1,0 +1,65 @@
+/* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V4 */
+/* Hallmark · genre: editorial · macrostructure: Stat-Led · theme: Almanac
+ * tone: editorial · anchor hue: 240 (cool blue-grey)
+ * nav: N9 Edge-aligned minimal · footer: Ft4 Dense typographic
+ * enrichment: none (typography only)
+ * H4 Stat-Led knobs: number-style=geometric-display, qualifier=below, secondary-stats=none
+ * paper-band: light (L99%) · display-style: geometric-sans · accent-hue: cool (240°)
+ */
+
+:root {
+  /* — Typography — */
+  --font-display: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+
+  /* — Type scale (major third 1.25) — */
+  --text-xs: 0.64rem;
+  --text-sm: 0.8rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-display: clamp(4rem, 12vw, 8rem);
+
+  /* — Colour (Almanac: cool neutral, hue 240) — */
+  --color-paper: oklch(99% 0.002 240);
+  --color-paper-2: oklch(96% 0.004 240);
+  --color-paper-3: oklch(93% 0.005 240);
+  --color-rule: oklch(85% 0.004 240);
+  --color-neutral: oklch(55% 0.006 240);
+  --color-muted: oklch(45% 0.008 240);
+  --color-ink: oklch(15% 0.008 240);
+  --color-accent: oklch(45% 0.12 240);
+  --color-focus: oklch(50% 0.14 240);
+
+  /* — Spacing (4pt scale) — */
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  /* — Motion — */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  /* — Layout — */
+  --measure: 65ch;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  /* — Rules — */
+  --rule-hairline: 1px solid var(--color-rule);
+}

@@ -38,6 +38,21 @@
 
 ---
 
+## Palmira (PTPN IV)
+
+### Internal User — PTPN IV Development Team
+> "Provider switching is the killer feature. When OpenAI had downtime last month, we just flipped to Claude and kept working. Zero lost conversations."
+
+### Internal User — PTPN IV Operations
+> "The project-scoped instructions save so much time. I don't have to re-explain our factory naming conventions every single chat — Palmira already knows."
+
+### Internal User — PTPN IV
+> "Search actually works. I can find a conversation from three months ago about a specific SAP integration issue in seconds. Before this we were copy-pasting into Notion just to not lose things."
+
+*← Replace with actual quotes from colleagues when available*
+
+---
+
 ## How to Collect More
 
 - Ask Cradle Space owner for a short quote about the website impact
