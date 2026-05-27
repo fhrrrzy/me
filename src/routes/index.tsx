@@ -23,7 +23,7 @@ function Home() {
         <div className="max-w-[960px] mx-auto">
 
           {/* Hero — Stat-Led: large number + qualifier */}
-          <header className="pt-20 pb-24 border-b border-rule">
+          <header className="reveal pt-20 pb-24 border-b border-rule" style={{ '--i': 0 } as React.CSSProperties}>
             <p className="font-mono text-xs uppercase tracking-widest text-muted mb-8">
               <span className="inline-block w-2 h-2 rounded-full bg-accent mr-2 align-middle" />
               Portfolio · 2025 Edition
@@ -32,7 +32,7 @@ function Home() {
               200k+
             </h1>
             <p className="text-lg font-normal mt-4 text-ink max-w-[45ch]">
-              rows of equipment data unified across 71 palm oil factories. I build tools that collapse months of manual work into hours.
+              rows of equipment data unified across 71 factories. Months of manual work, collapsed into hours.
             </p>
             <p className="mt-6 text-sm text-muted max-w-[50ch]">
               Frontend specialist. Fullstack when needed. Also ships paperless platforms, AI workspaces, and the occasional Telegram bot.
@@ -46,7 +46,7 @@ function Home() {
           </header>
 
           {/* Section: Capabilities */}
-          <section className="py-20 border-b border-rule">
+          <section className="reveal py-20 border-b border-rule" style={{ '--i': 1 } as React.CSSProperties}>
             <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8">
               <p className="font-mono text-xs uppercase tracking-widest text-muted pt-1">
                 What I do
@@ -68,7 +68,7 @@ function Home() {
           </section>
 
           {/* Section: Selected work */}
-          <section className="py-20 border-b border-rule">
+          <section className="reveal py-20 border-b border-rule" style={{ '--i': 2 } as React.CSSProperties}>
             <p className="font-mono text-xs uppercase tracking-widest text-muted mb-12">
               Selected work
             </p>
@@ -123,7 +123,7 @@ function Home() {
               </div>
             </div>
           </section>
-          <section className="py-20 border-b border-rule">
+          <section className="reveal py-20 border-b border-rule" style={{ '--i': 3 } as React.CSSProperties}>
             <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8">
               <p className="font-mono text-xs uppercase tracking-widest text-muted pt-1">
                 Career
@@ -139,7 +139,7 @@ function Home() {
           </section>
 
           {/* Section: Testimonials */}
-          <section className="py-20 border-b border-rule">
+          <section className="reveal py-20 border-b border-rule" style={{ '--i': 4 } as React.CSSProperties}>
             <p className="font-mono text-xs uppercase tracking-widest text-muted mb-12">
               References
             </p>
@@ -166,9 +166,9 @@ function Home() {
           </section>
 
           {/* Section: Contact */}
-          <section id="contact" className="py-20">
+          <section id="contact" className="reveal py-20" style={{ '--i': 5 } as React.CSSProperties}>
             <p className="text-xs text-neutral mb-12 max-w-[45ch]">
-              Also: milk enjoyer, former game modder, runs a 24/7 Telegram bot on a VPS because automation is a lifestyle.
+              Also: milk enjoyer, former game modder, runs a Telegram bot 24/7 on a VPS.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8">
               <p className="font-mono text-xs uppercase tracking-widest text-muted pt-1">
@@ -221,7 +221,7 @@ function Home() {
             Fahrurrozy · South Jakarta · 2025
           </p>
           <p className="font-mono text-[10px] uppercase tracking-widest text-neutral">
-            Built with TanStack Start · Tailwind v4 · Cloudflare
+            Currently building something, probably.
           </p>
         </div>
       </footer>
