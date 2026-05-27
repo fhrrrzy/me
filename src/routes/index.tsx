@@ -91,30 +91,38 @@ function Home() {
               <ProjectEntry
                 title="OAS — Oassyst.com"
                 context="Co-founded · 2024"
-                description="Paperless competition judging platform for Paskibra events. Real-time scoring, instant results, eliminated 12+ hours of manual tabulation per event."
+                description="Paperless competition judging platform for Paskibra events. Real-time scoring, instant results, eliminated 12+ hours of manual tabulation. Used by hundreds of schools across Indonesia."
                 role="Co-founder & developer"
-                tech="Next.js, TypeScript, PostgreSQL"
+                tech="Laravel, Inertia, Vue, PostgreSQL"
                 url="https://oassyst.com"
               />
               <ProjectEntry
                 title="Cradle Space"
                 context="Freelance · 2024"
-                description="Brand website for a premium coworking space. Solo project from design through deployment — motion, storytelling, conversion-focused."
+                description="Landing page for a premium coworking space in Medan. Solo from design through deployment — modern, clean, with intentional motion. The owner loved it."
                 role="Solo (design → delivery)"
-                tech="Next.js, Framer Motion, Tailwind"
+                tech="Next.js, GSAP, Tailwind"
                 url="https://cradlespace.co.id"
               />
               <ProjectEntry
                 title="Palmira"
-                context="PTPN IV · 2024"
+                context="PTPN IV · 2026"
                 description="Multi-provider AI chat workspace for internal teams. Switch between GPT, Claude, and custom endpoints without losing context. Project-scoped instructions, streaming responses, full-text search across months of conversations."
                 role="Frontend developer"
                 tech="Next.js 16, React 19, TypeScript, Prisma, PostgreSQL"
               />
             </div>
-          </section>
 
-          {/* Section: Timeline */}
+            <div className="mt-12 pt-8 border-t border-rule">
+              <p className="font-mono text-xs uppercase tracking-widest text-neutral mb-4">Also built</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-1 text-sm text-muted">
+                <span>PicaRet — rubber plantation management</span>
+                <span>Drakos — Telegram bot for game servers</span>
+                <span>Fintr — personal finance tracker</span>
+                <span>Sergai FM — radio streaming UI</span>
+              </div>
+            </div>
+          </section>
           <section className="py-20 border-b border-rule">
             <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8">
               <p className="font-mono text-xs uppercase tracking-widest text-muted pt-1">
@@ -123,6 +131,7 @@ function Home() {
               <div className="space-y-4">
                 <TimelineEntry year="2025" role="Software Developer" org="PTPN IV — enterprise tools, 71 factories" />
                 <TimelineEntry year="2024" role="Software Engineer" org="Diskominfo — government digital services" />
+                <TimelineEntry year="2024" role="B.S. Computer Science" org="UNIMED — graduated" />
                 <TimelineEntry year="2022" role="Frontend Developer" org="Cowalaid — startup, design systems" />
                 <TimelineEntry year="2019" role="Freelance" org="Websites, bots, game mods — started at 18" />
               </div>

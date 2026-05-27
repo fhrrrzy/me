@@ -44,6 +44,25 @@ body {
   min-height: 100%;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: oklch(14% 0.006 240);
+    --color-paper-2: oklch(18% 0.008 240);
+    --color-paper-3: oklch(22% 0.008 240);
+    --color-rule: oklch(32% 0.006 240);
+    --color-neutral: oklch(58% 0.006 240);
+    --color-muted: oklch(65% 0.006 240);
+    --color-ink: oklch(93% 0.004 240);
+    --color-accent: oklch(65% 0.10 240);
+    --color-focus: oklch(68% 0.12 240);
+  }
+
+  body {
+    background-image: radial-gradient(circle, oklch(30% 0.005 240) 0.5px, transparent 0.5px);
+    font-weight: 350;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 150ms !important;

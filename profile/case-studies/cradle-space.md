@@ -26,4 +26,4 @@ Built a modern, motion-rich landing page that tells the story of **why** someone
 Next.js, React, TypeScript, Tailwind CSS, GSAP animations, Filament CMS backend
 
 ## Result
-50+ companies now use Cradle Space. The site communicates urgency and value — clients understand not just what Cradle offers, but why it matters for their business. The motion design and storytelling approach received positive client feedback.
+The owner loved it — "modern, clean, with good animation" was the feedback. The site now communicates what Cradle Space is without needing explanation. Clients tell them the site made them want to visit. The motion design and storytelling approach landed exactly as intended.
