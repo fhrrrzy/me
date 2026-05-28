@@ -39,11 +39,9 @@ export function CaseStudyLayout({ title, context, role, tech, description, probl
               <div className="overflow-x-auto scrollbar-none">
                 <div className="flex gap-3 pb-4" style={{ minWidth: 'min-content' }}>
                   {screenshots.map((s, i) => (
-                    <figure key={i} className="shrink-0 w-[min(85vw,560px)] rounded-lg overflow-hidden border border-rule">
-                      <div className="aspect-[16/10] bg-paper-2">
-                        <img src={s.src} alt={`${title} - ${s.label}`} className="w-full h-full object-cover object-top" loading={i === 0 ? 'eager' : 'lazy'} />
-                      </div>
-                      <figcaption className="px-3 py-2 font-mono text-[10px] text-neutral uppercase tracking-wider">
+                    <figure key={i} className="relative shrink-0 h-[300px] rounded-lg overflow-hidden border border-rule bg-paper-2">
+                      <img src={s.src} alt={`${title} - ${s.label}`} className="h-full w-auto" loading={i === 0 ? 'eager' : 'lazy'} />
+                      <figcaption className="absolute bottom-0 left-0 right-0 px-3 py-2 font-mono text-[10px] text-neutral uppercase tracking-wider bg-paper/90 backdrop-blur-sm">
                         {s.label}
                       </figcaption>
                     </figure>
