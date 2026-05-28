@@ -1,7 +1,10 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { CaseStudyLayout } from '#/components/case-study-layout'
 
-export const Route = createFileRoute('/work/dendrogram')({ component: DendrogramPage })
+export const Route = createFileRoute('/work/dendrogram')({
+  component: DendrogramPage,
+  head: () => ({ meta: [{ title: 'Dendrogram Master · Fahruraji' }] }),
+})
 
 function DendrogramPage() {
   return (
@@ -10,6 +13,10 @@ function DendrogramPage() {
       context="PTPN IV · Started Jan 2026"
       role="Solo engineer"
       tech="TypeScript, PLpgSQL, Docker, Shell scripts"
+      screenshots={[
+        { src: "/screenshots/dendrogram.png", label: "Dashboard" },
+        { src: "/screenshots/dendrogram-login.png", label: "Login" },
+      ]}
       description="Data unification tool that reconciles equipment naming across 71 factories using dendrogram-based clustering. Turned months of manual Google Sheets validation into hours of automated processing."
       problem={[
         '71 factories each named the same equipment differently. no standard nomenclature.',

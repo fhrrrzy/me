@@ -1,6 +1,6 @@
 import { Link } from '@tanstack/react-router'
 
-export function CaseStudyLayout({ title, context, role, tech, description, problem, solution, result, screenshot, url }: {
+export function CaseStudyLayout({ title, context, role, tech, description, problem, solution, result, screenshots, url }: {
   title: string
   context: string
   role: string
@@ -9,7 +9,7 @@ export function CaseStudyLayout({ title, context, role, tech, description, probl
   problem: string[]
   solution: string[]
   result: string
-  screenshot?: string
+  screenshots?: { src: string; label: string }[]
   url?: string
 }) {
   return (
@@ -34,10 +34,26 @@ export function CaseStudyLayout({ title, context, role, tech, description, probl
             <p className="mt-4 font-mono text-[11px] text-neutral">{role} · {tech}</p>
           </header>
 
-          {screenshot && (
-            <figure className="mb-16 rounded-lg overflow-hidden border border-rule">
-              <img src={screenshot} alt={`${title} screenshot`} className="w-full" loading="lazy" />
-            </figure>
+          {screenshots && screenshots.length > 0 && (
+            <div className="mb-16 -mx-[clamp(1.5rem,5vw,3rem)] px-[clamp(1.5rem,5vw,3rem)] relative">
+              <div className="overflow-x-auto scrollbar-none">
+                <div className="flex gap-3 pb-4" style={{ minWidth: 'min-content' }}>
+                  {screenshots.map((s, i) => (
+                    <figure key={i} className="shrink-0 w-[min(85vw,560px)] rounded-lg overflow-hidden border border-rule">
+                      <div className="aspect-[16/10] bg-paper-2">
+                        <img src={s.src} alt={`${title} - ${s.label}`} className="w-full h-full object-cover object-top" loading={i === 0 ? 'eager' : 'lazy'} />
+                      </div>
+                      <figcaption className="px-3 py-2 font-mono text-[10px] text-neutral uppercase tracking-wider">
+                        {s.label}
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </div>
+              {screenshots.length > 1 && (
+                <div className="absolute right-0 top-0 bottom-4 w-12 pointer-events-none bg-gradient-to-l from-paper to-transparent" />
+              )}
+            </div>
           )}
 
           <section className="mb-12">
@@ -70,6 +86,14 @@ export function CaseStudyLayout({ title, context, role, tech, description, probl
           </section>
         </article>
       </main>
+
+      <footer className="px-[clamp(1.5rem,5vw,3rem)] py-8 border-t border-rule">
+        <div className="max-w-[720px] mx-auto">
+          <p className="font-mono text-[10px] uppercase tracking-widest text-neutral">
+            Fahruraji · {new Date().getFullYear()}
+          </p>
+        </div>
+      </footer>
     </div>
   )
 }

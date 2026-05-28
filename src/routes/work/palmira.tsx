@@ -1,7 +1,10 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { CaseStudyLayout } from '#/components/case-study-layout'
 
-export const Route = createFileRoute('/work/palmira')({ component: PalmiraPage })
+export const Route = createFileRoute('/work/palmira')({
+  component: PalmiraPage,
+  head: () => ({ meta: [{ title: 'Palmira · Fahruraji' }] }),
+})
 
 function PalmiraPage() {
   return (
@@ -10,6 +13,10 @@ function PalmiraPage() {
       context="PTPN IV · Started Apr 2026"
       role="Frontend developer"
       tech="Next.js 16, React 19, TypeScript, Prisma, PostgreSQL, Docker"
+      screenshots={[
+        { src: "/screenshots/palmira.png", label: "Dashboard" },
+        { src: "/screenshots/palmira-login.png", label: "Login" },
+      ]}
       description="Multi-provider AI chat workspace for internal teams. Switch between GPT, Claude, and custom endpoints without losing context. Project-scoped instructions, streaming responses, full-text search across months of conversations."
       problem={[
         'Existing AI chat tools locked to one provider. when one has downtime, work stops.',

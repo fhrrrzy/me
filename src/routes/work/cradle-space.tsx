@@ -1,7 +1,10 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { CaseStudyLayout } from '#/components/case-study-layout'
 
-export const Route = createFileRoute('/work/cradle-space')({ component: CradleSpacePage })
+export const Route = createFileRoute('/work/cradle-space')({
+  component: CradleSpacePage,
+  head: () => ({ meta: [{ title: 'Cradle Space · Fahruraji' }] }),
+})
 
 function CradleSpacePage() {
   return (
@@ -11,7 +14,10 @@ function CradleSpacePage() {
       role="Solo (design → delivery)"
       tech="Next.js, TypeScript, GSAP, Tailwind CSS, Filament CMS, Docker"
       description="Landing page for a premium coworking space in Medan. Solo from design through deployment. modern, clean, with intentional motion. The owner loved it."
-      screenshot="/screenshots/cradle-space.png"
+      screenshots={[
+        { src: "/screenshots/cradle-space.png", label: "Desktop" },
+        { src: "/screenshots/cradle-space-mobile.png", label: "Mobile" },
+      ]}
       url="https://cradlespace.co.id"
       problem={[
         'The previous web presence did not communicate the brand\'s premium positioning.',

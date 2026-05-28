@@ -1,7 +1,10 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { CaseStudyLayout } from '#/components/case-study-layout'
 
-export const Route = createFileRoute('/work/cmms')({ component: CmmsPage })
+export const Route = createFileRoute('/work/cmms')({
+  component: CmmsPage,
+  head: () => ({ meta: [{ title: 'CMMS: Equipment Monitoring · Fahruraji' }] }),
+})
 
 function CmmsPage() {
   return (
@@ -10,6 +13,11 @@ function CmmsPage() {
       context="PTPN IV · Started Sep 2025"
       role="Fullstack developer (team)"
       tech="Vue 3, Laravel, PostgreSQL, SAP RFC, Docker, Jupyter Notebook"
+      screenshots={[
+        { src: "/screenshots/cmms.png", label: "Dashboard" },
+        { src: "/screenshots/cmms-landing.png", label: "Landing page" },
+        { src: "/screenshots/cmms-login.png", label: "Login" },
+      ]}
       description="SAP PM-integrated system tracking equipment health across 71 palm oil factories. Real-time dashboards, maintenance scheduling, and failure prediction for plant managers."
       problem={[
         'Equipment data scattered across SAP PM and local spreadsheets. no unified view for plant managers.',

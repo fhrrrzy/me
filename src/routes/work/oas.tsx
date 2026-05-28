@@ -1,7 +1,10 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { CaseStudyLayout } from '#/components/case-study-layout'
 
-export const Route = createFileRoute('/work/oas')({ component: OasPage })
+export const Route = createFileRoute('/work/oas')({
+  component: OasPage,
+  head: () => ({ meta: [{ title: 'OAS · Fahruraji' }] }),
+})
 
 function OasPage() {
   return (
@@ -11,7 +14,10 @@ function OasPage() {
       role="Co-founder & developer"
       tech="Laravel, Inertia.js, Vue, Tailwind CSS, Filament, PostgreSQL, Docker"
       description="Paperless competition judging platform for Paskibra events. Real-time scoring, instant results, eliminated 12+ hours of manual tabulation per event. Used by hundreds of schools across Indonesia."
-      screenshot="/screenshots/oas.png"
+      screenshots={[
+        { src: "/screenshots/oas.png", label: "Desktop" },
+        { src: "/screenshots/oas-mobile.png", label: "Mobile" },
+      ]}
       url="https://oassyst.com"
       problem={[
         'Competition scoring done entirely on paper. score sheets got lost, calculations had errors.',
