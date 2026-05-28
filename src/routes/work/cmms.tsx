@@ -14,9 +14,9 @@ function CmmsPage() {
       role="Fullstack developer (team)"
       tech="Vue 3, Laravel, PostgreSQL, SAP RFC, Docker, Jupyter Notebook"
       screenshots={[
-        { src: "/screenshots/cmms.png", label: "Dashboard" },
-        { src: "/screenshots/cmms-landing.png", label: "Landing page" },
-        { src: "/screenshots/cmms-login.png", label: "Login" },
+        { src: "/screenshots/cmms.webp", label: "Dashboard" },
+        { src: "/screenshots/cmms-landing.webp", label: "Landing page" },
+        { src: "/screenshots/cmms-login.webp", label: "Login" },
       ]}
       description="SAP PM-integrated system tracking equipment health across 71 palm oil factories. Real-time dashboards, maintenance scheduling, and failure prediction for plant managers."
       problem={[

@@ -14,8 +14,8 @@ function PalmiraPage() {
       role="Frontend developer"
       tech="Next.js 16, React 19, TypeScript, Prisma, PostgreSQL, Docker"
       screenshots={[
-        { src: "/screenshots/palmira.png", label: "Dashboard" },
-        { src: "/screenshots/palmira-login.png", label: "Login" },
+        { src: "/screenshots/palmira.webp", label: "Dashboard" },
+        { src: "/screenshots/palmira-login.webp", label: "Login" },
       ]}
       description="Multi-provider AI chat workspace for internal teams. Switch between GPT, Claude, and custom endpoints without losing context. Project-scoped instructions, streaming responses, full-text search across months of conversations."
       problem={[

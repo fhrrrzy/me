@@ -15,8 +15,8 @@ function CradleSpacePage() {
       tech="Next.js, TypeScript, GSAP, Tailwind CSS, Filament CMS, Docker"
       description="Landing page for a premium coworking space in Medan. Solo from design through deployment. modern, clean, with intentional motion. The owner loved it."
       screenshots={[
-        { src: "/screenshots/cradle-space.png", label: "Desktop" },
-        { src: "/screenshots/cradle-space-mobile.png", label: "Mobile" },
+        { src: "/screenshots/cradle-space.webp", label: "Desktop" },
+        { src: "/screenshots/cradle-space-mobile.webp", label: "Mobile" },
       ]}
       url="https://cradlespace.co.id"
       problem={[

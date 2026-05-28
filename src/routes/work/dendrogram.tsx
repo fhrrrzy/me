@@ -14,8 +14,8 @@ function DendrogramPage() {
       role="Solo engineer"
       tech="TypeScript, PLpgSQL, Docker, Shell scripts"
       screenshots={[
-        { src: "/screenshots/dendrogram.png", label: "Dashboard" },
-        { src: "/screenshots/dendrogram-login.png", label: "Login" },
+        { src: "/screenshots/dendrogram.webp", label: "Dashboard" },
+        { src: "/screenshots/dendrogram-login.webp", label: "Login" },
       ]}
       description="Data unification tool that reconciles equipment naming across 71 factories using dendrogram-based clustering. Turned months of manual Google Sheets validation into hours of automated processing."
       problem={[

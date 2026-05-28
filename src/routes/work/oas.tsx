@@ -15,8 +15,8 @@ function OasPage() {
       tech="Laravel, Inertia.js, Vue, Tailwind CSS, Filament, PostgreSQL, Docker"
       description="Paperless competition judging platform for Paskibra events. Real-time scoring, instant results, eliminated 12+ hours of manual tabulation per event. Used by hundreds of schools across Indonesia."
       screenshots={[
-        { src: "/screenshots/oas.png", label: "Desktop" },
-        { src: "/screenshots/oas-mobile.png", label: "Mobile" },
+        { src: "/screenshots/oas.webp", label: "Desktop" },
+        { src: "/screenshots/oas-mobile.webp", label: "Mobile" },
       ]}
       url="https://oassyst.com"
       problem={[
