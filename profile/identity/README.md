@@ -2,8 +2,8 @@
 
 ## The Basics
 
-- **Full Name:** Fahrurrozy
-- **Online Alias:** Fahruraji
+- **Full Name:** Fahruraji
+- **Online Alias:** Fahrurrozy
 - **Handle:** @fhrrrzy (everywhere)
 - **Email:** fahrurrozy4214@gmail.com
 - **Location:** South Jakarta, Indonesia
