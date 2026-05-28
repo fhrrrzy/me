@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400&display=swap');
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400&display=swap') layer(base);
 
 @theme {
   /* — Almanac: reference-book, indexed, cross-referenced — */
@@ -105,11 +105,21 @@ body {
     background-image: none !important;
     background-color: white !important;
     color: black !important;
+    font-family: system-ui, -apple-system, sans-serif !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
   }
-  a[href]::after {
-    content: " (" attr(href) ")";
-    font-size: 0.75em;
-    color: #666;
+  nav, footer { display: none !important; }
+  a { color: black !important; text-decoration: none !important; }
+  a[href]::after { content: none !important; }
+  svg { display: none !important; }
+  * {
+    color: black !important;
+    background: none !important;
+    border-color: #ccc !important;
   }
-  nav, footer { display: none; }
+  @page {
+    margin: 0.6in 0.7in;
+    size: letter;
+  }
 }

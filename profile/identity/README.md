@@ -8,7 +8,7 @@
 - **Email:** fahrurrozy4214@gmail.com
 - **Location:** South Jakarta, Indonesia
 - **From:** Medan, North Sumatra
-- **Languages:** Bahasa Indonesia (native), English (working)
+- **Languages:** Bahasa Indonesia (fluent), English (intermediate), Minang (fluent)
 
 ## One-Liner Options (for hero section)
 

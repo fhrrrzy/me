@@ -9,38 +9,127 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ResumeRouteImport } from './routes/resume'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as WorkPalmiraRouteImport } from './routes/work/palmira'
+import { Route as WorkOasRouteImport } from './routes/work/oas'
+import { Route as WorkDendrogramRouteImport } from './routes/work/dendrogram'
+import { Route as WorkCradleSpaceRouteImport } from './routes/work/cradle-space'
+import { Route as WorkCmmsRouteImport } from './routes/work/cmms'
 
+const ResumeRoute = ResumeRouteImport.update({
+  id: '/resume',
+  path: '/resume',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WorkPalmiraRoute = WorkPalmiraRouteImport.update({
+  id: '/work/palmira',
+  path: '/work/palmira',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkOasRoute = WorkOasRouteImport.update({
+  id: '/work/oas',
+  path: '/work/oas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkDendrogramRoute = WorkDendrogramRouteImport.update({
+  id: '/work/dendrogram',
+  path: '/work/dendrogram',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkCradleSpaceRoute = WorkCradleSpaceRouteImport.update({
+  id: '/work/cradle-space',
+  path: '/work/cradle-space',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkCmmsRoute = WorkCmmsRouteImport.update({
+  id: '/work/cmms',
+  path: '/work/cmms',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/resume': typeof ResumeRoute
+  '/work/cmms': typeof WorkCmmsRoute
+  '/work/cradle-space': typeof WorkCradleSpaceRoute
+  '/work/dendrogram': typeof WorkDendrogramRoute
+  '/work/oas': typeof WorkOasRoute
+  '/work/palmira': typeof WorkPalmiraRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/resume': typeof ResumeRoute
+  '/work/cmms': typeof WorkCmmsRoute
+  '/work/cradle-space': typeof WorkCradleSpaceRoute
+  '/work/dendrogram': typeof WorkDendrogramRoute
+  '/work/oas': typeof WorkOasRoute
+  '/work/palmira': typeof WorkPalmiraRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/resume': typeof ResumeRoute
+  '/work/cmms': typeof WorkCmmsRoute
+  '/work/cradle-space': typeof WorkCradleSpaceRoute
+  '/work/dendrogram': typeof WorkDendrogramRoute
+  '/work/oas': typeof WorkOasRoute
+  '/work/palmira': typeof WorkPalmiraRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/resume'
+    | '/work/cmms'
+    | '/work/cradle-space'
+    | '/work/dendrogram'
+    | '/work/oas'
+    | '/work/palmira'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/resume'
+    | '/work/cmms'
+    | '/work/cradle-space'
+    | '/work/dendrogram'
+    | '/work/oas'
+    | '/work/palmira'
+  id:
+    | '__root__'
+    | '/'
+    | '/resume'
+    | '/work/cmms'
+    | '/work/cradle-space'
+    | '/work/dendrogram'
+    | '/work/oas'
+    | '/work/palmira'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ResumeRoute: typeof ResumeRoute
+  WorkCmmsRoute: typeof WorkCmmsRoute
+  WorkCradleSpaceRoute: typeof WorkCradleSpaceRoute
+  WorkDendrogramRoute: typeof WorkDendrogramRoute
+  WorkOasRoute: typeof WorkOasRoute
+  WorkPalmiraRoute: typeof WorkPalmiraRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/resume': {
+      id: '/resume'
+      path: '/resume'
+      fullPath: '/resume'
+      preLoaderRoute: typeof ResumeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,11 +137,52 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/work/palmira': {
+      id: '/work/palmira'
+      path: '/work/palmira'
+      fullPath: '/work/palmira'
+      preLoaderRoute: typeof WorkPalmiraRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work/oas': {
+      id: '/work/oas'
+      path: '/work/oas'
+      fullPath: '/work/oas'
+      preLoaderRoute: typeof WorkOasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work/dendrogram': {
+      id: '/work/dendrogram'
+      path: '/work/dendrogram'
+      fullPath: '/work/dendrogram'
+      preLoaderRoute: typeof WorkDendrogramRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work/cradle-space': {
+      id: '/work/cradle-space'
+      path: '/work/cradle-space'
+      fullPath: '/work/cradle-space'
+      preLoaderRoute: typeof WorkCradleSpaceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work/cmms': {
+      id: '/work/cmms'
+      path: '/work/cmms'
+      fullPath: '/work/cmms'
+      preLoaderRoute: typeof WorkCmmsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ResumeRoute: ResumeRoute,
+  WorkCmmsRoute: WorkCmmsRoute,
+  WorkCradleSpaceRoute: WorkCradleSpaceRoute,
+  WorkDendrogramRoute: WorkDendrogramRoute,
+  WorkOasRoute: WorkOasRoute,
+  WorkPalmiraRoute: WorkPalmiraRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

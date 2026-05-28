@@ -15,11 +15,31 @@ export const Route = createRootRoute({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'Fahruraji — Software Developer',
+        title: 'Fahruraji · Software Developer',
       },
       {
         name: 'description',
-        content: 'Frontend developer crafting clean, useful, and reliable web experiences. 6+ years building enterprise tools, SaaS products, and automation.',
+        content: 'Frontend developer crafting clean, useful, and reliable web experiences. 200k+ rows unified, 12 hours eliminated, enterprise tools for 71 factories.',
+      },
+      {
+        property: 'og:title',
+        content: 'Fahruraji · Software Developer',
+      },
+      {
+        property: 'og:description',
+        content: 'I build tools that collapse months into hours. Frontend specialist, fullstack when needed.',
+      },
+      {
+        property: 'og:image',
+        content: 'https://waterflai.my.id/og.svg',
+      },
+      {
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image',
       },
     ],
     links: [
@@ -47,6 +67,28 @@ function RootDocument({ children }: { children: React.ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Person',
+              name: 'Fahruraji',
+              alternateName: 'Fahrurrozy',
+              jobTitle: 'Software Developer',
+              url: 'https://waterflai.my.id',
+              sameAs: [
+                'https://github.com/fhrrrzy',
+                'https://linkedin.com/in/fhrrrzy',
+              ],
+              knowsAbout: ['Vue.js', 'React', 'TypeScript', 'Laravel', 'PostgreSQL', 'Docker'],
+              worksFor: {
+                '@type': 'Organization',
+                name: 'PT Perkebunan Nusantara IV',
+              },
+            }),
+          }}
+        />
       </head>
       <body>
         {children}

@@ -3,7 +3,7 @@ export function Hero() {
     <header className="reveal pt-20 pb-24 border-b border-rule" style={{ '--i': 0 } as React.CSSProperties}>
       <p className="font-mono text-xs uppercase tracking-widest text-muted mb-8">
         <span className="inline-block w-2 h-2 rounded-full bg-accent mr-2 align-middle" />
-        Portfolio · 2025 Edition
+        Portfolio · {new Date().getFullYear()} Edition
       </p>
       <h1 className="font-display text-[clamp(4rem,12vw,8rem)] font-light leading-none tracking-tighter text-ink">
         200k+

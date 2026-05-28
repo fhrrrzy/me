@@ -6,11 +6,11 @@ export function Career() {
           Career
         </h2>
         <div className="space-y-4">
-          <TimelineEntry year="2025" role="Software Developer" org="PTPN IV — enterprise tools, 71 factories" />
-          <TimelineEntry year="2024" role="Software Engineer" org="Diskominfo — government digital services" />
-          <TimelineEntry year="2024" role="B.S. Computer Science" org="UNIMED — graduated" />
-          <TimelineEntry year="2022" role="Frontend Developer" org="Cowalaid — startup, design systems" />
-          <TimelineEntry year="2019" role="Freelance" org="Websites, bots, game mods — started at 18" />
+          <TimelineEntry year="2025" role="Software Developer" org="PTPN IV, enterprise tools for 71 factories" />
+          <TimelineEntry year="2024" role="Software Engineer" org="Diskominfo, government digital services" />
+          <TimelineEntry year="2024" role="B.S. Computer Science" org="UNIMED" />
+          <TimelineEntry year="2022" role="Frontend Developer" org="Cowalaid, startup" />
+          <TimelineEntry year="2019" role="Freelance" org="Websites, bots, game mods. Started at 18" />
         </div>
       </div>
     </section>
@@ -29,7 +29,7 @@ function TimelineEntry({ year, role, org }: {
       </span>
       <p className="text-sm">
         <span className="font-medium">{role}</span>
-        <span className="text-muted"> — {org}</span>
+        <span className="text-muted"> · {org}</span>
       </p>
     </div>
   )
